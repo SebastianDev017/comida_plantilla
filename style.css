@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.principal{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(img/bg_principal3.jpg);
+    background-size: cover;
+    background-position: center center;
+    height:720px;
+}
+header{
+ background: rgb(231, 196, 0);
+ position: fixed;
+ max-width: 100%;
+ width: 100%;
+ box-shadow: #000 0px 0px 2px 0px;
+}
+nav{
+    height: 90px;
+    max-width: 100%;
+    width: 100%;
+    padding: 20px ;
+    height: auto;
+}
+nav img{
+    width: 90px;
+    height: auto;
+    display: flex;
+    float: left;
+}
+.ul-bar{
+    display: table;
+    max-width: 100%;
+    float: right;
+}
+.li-bar{
+    display: table-cell;
+    max-width: 100%;
+    height: auto;
+    line-height: 50px;
+}
+.link-bar{
+    display: flex;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Sofia Sans Extra Condensed';
+    font-size: 25px;
+}
+li a:hover{
+    color: #fff;
+    transition-duration: .15s;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.link-bar img{
+    max-width: 50px;
+    height: auto;
+    display: block;
+}
+.principal-text{
+color: #fff;
+display: flex;
+max-width: 50%;
+margin: 260px 50px;
+height: auto;
+float: left;
+text-align: center;
+}
+.principal-text h1{
+    font-family: 'Sofia Sans Extra Condensed';
+    font-size:60px;
+    margin-bottom: 10px;
+}
+.principal-text span{
+    font-size: 22px;
+   font-family: 'Encode Sans Semi Expanded'; 
+}
+.servicios{
+    background-color: rgb(215, 183, 0);
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+.servicios-comida{
+    max-width: 90%;
+    height: auto;
+    padding: 30px;
+}
+.servicios-comida img{
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    margin: auto;
+    float: left;
+}
+.servicios-comida h1{
+    text-align: center;
+    font-family: 'Sofia Sans Extra Condensed';
+    padding: 10px;
+    font-size: 35px;
+}
+.servicios-comida p{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Encode Sans Semi Expanded';
+}
+.ul-precios{
+    display: table;
+}
+.li-precios{
+    display: block;
+    margin: 15px 50px;
+    font-family: 'Encode Sans Semi Expanded';
+    font-weight: bold;
+}
+.servicios-perros{
+    max-width: 90%;
+    height: auto;
+    padding: 30px;
+}
+.servicios-perros img{
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    margin: auto;
+    float: right;
+}
+.servicios-perros h1{
+    text-align: center;
+    font-family: 'Sofia Sans Extra Condensed';
+    padding: 10px;
+    font-size: 35px;
+}
+.servicios-perros p{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Encode Sans Semi Expanded';
+    font-size: 18px;
+}
+.ubicacion{
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    background: rgb(255, 255, 255);
+    float: left;
+    width: 100%;
+}
+.ubicacion h1{
+    text-align: center;
+    margin: 10px auto;
+    color: black;
+    font-family: 'Sofia Sans Extra Condensed';
+    font-size: 35px;
+    height: 40px;
+    width: 100%;
+    float: right;
+}
+.redes{
+    max-width: 50%;
+    height: auto;
+    width: 50%;
+}
+
+.redes-sociales{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+.redes-sociales img{
+    width: 50px;
+    height: auto;
+    margin:auto;
+}
+.redes-sociales a{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 10px;
+}
+@media screen and (max-width: 740px){
+    .servicios-perros img{
+        max-width: 200px;
+        height: auto;
+        display: flex;
+        margin: auto;
+        float: right;
+    }
+    .servicios-perros p{
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: 'Encode Sans Semi Expanded';
+        font-size: 14px;
+    }
+    .servicios-perros h1{
+        text-align: center;
+        font-family: 'Sofia Sans Extra Condensed';
+        padding: 10px;
+        font-size: 28px;
+    }
+    .servicios-comida img{
+        max-width: 200px;
+        height: auto;
+        display: flex;
+        margin: auto;
+        float: left;
+    }
+    .servicios-comida h1{
+        text-align: center;
+        font-family: 'Sofia Sans Extra Condensed';
+        padding: 10px;
+        font-size: 28px;
+    }
+    .servicios-comida p{
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 14px;
+        font-family: 'Encode Sans Semi Expanded';
+    }
+    .redes h1{
+        font-size: 28px;
+    }
+    .redes-sociales img{
+        width: 40px;
+        height: auto;
+        margin:auto;
+    }
+    .link-bar{
+        display: flex;
+        margin: auto;
+        font-size: 20px;
+        padding: 15px;
+        margin-left: 10px;
+        color: black;
+        font-family: 'Sofia Sans Extra Condensed';
+    }
+    nav{
+        max-width: 100%;
+        width: 100%;
+        padding: 14px;
+        height: auto;
+    }
+    nav img{
+        width: 80px;
+        height: auto;
+        display: flex;
+        float: left;
+    }
+    .li-bar{
+        display: table-cell;
+        max-width: 100%;
+        height: auto;
+        line-height: 40px;
+    }
+    .principal-text h1{
+        font-family: 'Sofia Sans Extra Condensed';
+        font-size:50px;
+        margin-bottom: 10px;
+    }
+    .principal-text span{
+        font-size: 20px;
+       font-family: 'Encode Sans Semi Expanded'; 
+    }
+}
+@media  screen and (max-width:590px) {
+    .servicios-perros img{
+        max-width: 180px;
+        height: auto;
+        display: flex;
+        margin: auto;
+        float: right;
+    }
+    .servicios-perros p{
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: 'Encode Sans Semi Expanded';
+        font-size: 10px;
+    }
+    .servicios-perros h1{
+        text-align: center;
+        font-family: 'Sofia Sans Extra Condensed';
+        padding: 10px;
+        font-size: 24px;
+    }
+    .servicios-comida img{
+        max-width: 180px;
+        height: auto;
+        display: flex;
+        margin: auto;
+        float: left;
+    }
+    .servicios-comida h1{
+        text-align: center;
+        font-family: 'Sofia Sans Extra Condensed';
+        padding: 10px;
+        font-size: 24px;
+    }
+    .servicios-comida p{
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 10px;
+        font-family: 'Encode Sans Semi Expanded';
+    }
+    .redes h1{
+        font-size: 20px;
+    }
+    .redes-sociales img{
+        width: 35px;
+        height: auto;
+        margin:auto;
+    }
+    .link-bar{
+        display: flex;
+        margin: auto;
+        padding: 15px;
+        margin-left: 10px;
+        color: black;
+        font-family: 'Sofia Sans Extra Condensed';
+        font-size: 18px;
+    }
+    nav{
+        height: 80px;
+        max-width: 100%;
+        width: 100%;
+        padding: 5px;
+        height: auto;
+    }
+    nav img{
+        width: 70px;
+        height: auto;
+        display: flex;
+        float: left;
+    }
+    .li-bar{
+        display: table-cell;
+        max-width: 100%;
+        height: auto;
+        line-height: 40px;
+    }
+    .principal-text h1{
+        font-family: 'Sofia Sans Extra Condensed';
+        font-size:40px;
+        margin-bottom: 10px;
+    }
+    .principal-text span{
+        font-size: 16px;
+       font-family: 'Encode Sans Semi Expanded'; 
+    }
+    .li-precios{
+    display: block;
+    margin: 10px 50px;
+    font-family: 'Encode Sans Semi Expanded';
+    font-weight: bold;
+    font-size: 12px;
+}
+.servicios-comida{
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.servicios-perros{
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+}
+}
